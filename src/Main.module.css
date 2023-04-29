@@ -1,0 +1,13 @@
+.main_wrapper {
+    flex:1;
+    overflow: scroll;
+}
+
+.main {
+    padding: 20px 50px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    gap: 20px;
+    flex-wrap: wrap;
+}

@@ -1,0 +1,6 @@
+.App{
+  height: 100vh;
+  background-image: linear-gradient(to top right, rgb(46, 36, 135) , blue);
+  display: flex;
+  flex-direction: column;
+}

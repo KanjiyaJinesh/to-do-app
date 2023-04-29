@@ -1,0 +1,142 @@
+.list_container {
+    background-color: rgba(0, 0, 0, 0.44);
+    flex:1;
+    max-height: 700px;
+    min-width: 400px;
+    max-width: 600px;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    border: 1px solid rgba(255, 255, 255, 0.255);
+    border-radius: 8px;
+    box-shadow: 10px 10px 10px 0 rgba(0, 0, 0, 0.3);
+}
+
+.list_header{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    color: orange;
+    padding: 15px 15px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.255);
+}
+
+.list_header h2 {
+    padding: 4px 0px;
+}
+
+.filler{
+    flex: 1;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.add_task_button{
+    height:100%;
+    padding: 0px 10px;
+    font-size: large;
+    border-radius: 5px;
+    background-color: orange;
+    border: 2px solid rgb(100, 65, 0);
+    transition: all 200ms;
+}
+
+.list_wrapper {
+    flex:1;
+    overflow: scroll;
+    padding: 0px 15px 15px 15px;
+}
+
+.list {
+    list-style: none;
+    font-size: large;
+}
+
+.listItem_container {
+    padding-top: 15px;
+}
+
+.listItem {
+    display: flex;
+
+}
+
+.listItem_p {
+    width: calc(100% - 24px);
+}
+
+.listItem_p p {
+    
+    height: 100%;
+    word-wrap: break-word;
+}
+
+.listItem_span {
+    width: 24px;
+    height: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.high {
+    color: rgb(251, 148, 148);
+}
+.medium {
+    color: rgb(248, 248, 136);
+}
+.low {
+    color: rgb(0, 255, 255);
+}
+
+.listItem_container:not(:last-child) {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.255);
+    padding-bottom: 15px;
+}
+
+.actions {
+    padding-top: 10px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.button {
+    padding: 5px 10px;
+    font-size: large;
+    border-radius: 5px;
+    transition: all 200ms;
+}
+
+.remove_button{
+    display: inline-block;
+    color: red;
+    transition: all 200ms;
+}
+
+.edit_button{
+    display: inline-block;
+    color: orange;
+    transition: all 200ms;
+}
+
+.remove_button:hover, .edit_button:hover{
+    color: white;
+    transform: scale(1.2);
+    cursor: pointer;
+}
+
+.forward_button, .save_button {
+    background-color: rgb(0, 205, 0);
+    border: 2px solid rgb(0, 109, 0);
+}
+
+.cancel_button {
+    background-color: rgb(242, 62, 62);
+    border: 2px solid rgb(80, 0, 0);
+}
+
+.add_task_button:hover , .button:hover{
+    transform: scale(1.1);
+    cursor: pointer;
+}
